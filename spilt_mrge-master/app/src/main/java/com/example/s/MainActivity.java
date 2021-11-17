@@ -392,6 +392,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(new Intent(this,stats.class));
 
         }
+        if (item.getItemId() == R.id.future) {
+            Toast.makeText(this, "stats", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,FutureActivity.class));
+
+        }
         if (item.getItemId() == R.id.privacy) {
             Toast.makeText(this, "privacy", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(this,Privacy_Policy.class));
